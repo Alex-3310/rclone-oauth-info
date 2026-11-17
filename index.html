@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="rclone-backup 個人 Google Drive 備份設定的用途與資料處理說明。">
+<title>rclone-backup｜個人備份用途說明</title>
+<style>body{font-family:system-ui,"Noto Sans TC",sans-serif;line-height:1.8;color:#172b3a;background:#f5f7fa;margin:0}main{max-width:760px;margin:40px auto;padding:32px;background:white;border:1px solid #dce3ea;border-radius:12px}h1,h2{line-height:1.4}h1{font-size:2rem}h2{font-size:1.25rem;margin-top:28px}a{color:#075bac}footer{margin-top:32px;border-top:1px solid #dce3ea;padding-top:16px;color:#526473}@media(max-width:600px){main{margin:12px;padding:22px}}</style>
+</head>
+<body><main>
+<h1>rclone-backup</h1>
+<p>這是由 <a href="https://github.com/Alex-3310">Alex-3310</a> 維護、僅供本人使用的 Google Drive 備份設定。它使用 rclone 在個人電腦執行備份、檢查與還原。本設定由個人自行管理，並非 Google 或 rclone 官方提供的服務。</p>
+<h2>功能與 Google Drive 存取用途</h2>
+<ul>
+<li>列出與讀取備份檔案及中繼資料，檢查現有備份。</li>
+<li>將在本機透過 rclone crypt 加密的備份封存上傳至自己的 Google Drive。</li>
+<li>下載並解密備份，以驗證完整性及在重灌或更換電腦後還原資料。</li>
+<li>依設定的保留規則，將符合條件的舊備份移至 Google Drive 垃圾桶。</li>
+</ul>
+<p>為了讀取既有資料並管理備份，本設定使用 Google Drive OAuth 授權。若授予完整 Drive 存取範圍，權限可涵蓋帳號中的其他檔案；指定備份資料夾只是工具的操作設定，並非 Google 強制實施的資料夾權限限制。</p>
+<h2>資料與憑證</h2>
+<p>備份資料保存在擁有者的電腦與其 Google Drive 中。本公開網站只提供用途與隱私說明，不提供上傳、登入、OAuth 回呼或備份處理功能，也不接收 OAuth Token、Client Secret、解密金鑰或備份內容。</p>
+<p>完整資料處理、保存及撤銷方式，請參閱 <a href="privacy.html">rclone-backup 隱私權政策</a>。</p>
+<h2>聯絡</h2>
+<p>可透過 <a href="https://github.com/Alex-3310/rclone-oauth-info/issues">本專案的 GitHub Issues</a> 聯絡維護者。公開留言中請勿附上個人資料、憑證或備份檔案。</p>
+<footer>更新日期：2026-11-18 · <a href="privacy.html">隱私權政策</a></footer>
+</main></body></html>
